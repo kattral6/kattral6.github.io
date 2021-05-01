@@ -1,0 +1,160 @@
+<h2 style="text-align: center;"><strong>3D Navigation</strong></h2>
+<p><strong>1. Creating a Camera</strong></p>
+<p>Sets a camera and targe location to create and save a 3D perspective view of objects.</p>
+<p>1. Open a drawing with 3D objects.</p>
+<p>2. Choose View, Create Camera.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or</p>
+<p>3. Type CAMERA at the command prompt. Command: <strong>camera</strong></p>
+<p>Current camera settings: Height=5.0000 Lens Length=50.0000 mm</p>
+<p>Specify camera location:&nbsp;&nbsp;&nbsp;&nbsp;<strong> -xy</strong></p>
+<p>of (need Z):&nbsp;&nbsp;<strong> 7</strong></p>
+<p>Specify target location:&nbsp; <strong>endp</strong></p>
+<p>Enter an option [?/Name/Location/Height/Target/Lens/Clipping/View/eXit]&lt;eXit&gt;:<strong> X</strong></p>
+<p>&nbsp;</p>
+<p>Camera location</p>
+<p>using .XY filter</p>
+<p>and Z height of 7</p>
+<p>&nbsp;</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image1.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Camera target</p>
+<p><strong>2. Viewing a Camera</strong></p>
+<p>Once a camera is created, it becomes a named view in the drawing and can be viewed using the</p>
+<p>Named View Manager. You can also view the camera using the view option when creating the</p>
+<p>camera.</p>
+<p>1.&nbsp; Choose View, <strong>3D Views, Southwest Isometric</strong> to be sure you are not in an existing camera</p>
+<p>view.</p>
+<p>2.&nbsp; Choose View, Named Views.</p>
+<p>3.&nbsp; Click the plus (+) sign beside Model Views.</p>
+<p>4.&nbsp; Click Camera 1, Set Current, Apply, and OK.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image2.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; View from Camera</p>
+<p><strong>3. Camera Preview</strong></p>
+<p>Camera preview is a quick and easy way to see the properties of a camera before viewing from the</p>
+<p>camera.</p>
+<p>&nbsp;</p>
+<p>1.&nbsp; Choose <strong>View, 3D Views, Southwest Isometric</strong> to be sure you are</p>
+<p>not in an existing camera view.</p>
+<p>2.&nbsp;&nbsp; Zoom out until you see the camera in your 3D view.</p>
+<p>3.&nbsp; Click once on a camera in your view.</p>
+<p>&nbsp;</p>
+<p>The Camera Preview dialog box will show the view from the chosen camera. You can change the</p>
+<p>Visual style of this preview to 3DWireframe, Conceptual or Realistic.</p>
+<p>&nbsp;</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image3.jpeg"style=max-width:100%;height:auto; />
+<p><strong>4. Camera Properties</strong></p>
+<p>1.&nbsp; In a 3D isometeric view, double click a camera.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image4.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>5. Displaying and Plotting a Camera</strong></p>
+<p>&nbsp;</p>
+<p><em><strong>Displaying a Camera</strong></em></p>
+<p>1.&nbsp; Choose <strong>View, Display, Camera</strong></p>
+<p>&nbsp;</p>
+<p><strong>Plotting a Camera</strong></p>
+<p>1.&nbsp; If cameras are not already displayed in the drawing, click View,</p>
+<p>Display, Cameras.</p>
+<p>2.&nbsp; Double-click a camera.</p>
+<p>3.&nbsp; In the Properties palette, Camera section, Plot option, click Yes or No.</p>
+<p><strong>6. Adjusting Camera Distances and Swivelling a Camera</strong></p>
+<p><em><strong>Adjusting Camera Distances</strong></em></p>
+<p>1.&nbsp; Choose View, Named Views.</p>
+<p>2.&nbsp; Click the plus(+) sign beside Model Views.</p>
+<p>3.&nbsp; Click Camera1, Set Current, Apply, and OK.</p>
+<p>4.&nbsp; Choose View, Camera, Adjust Distance</p>
+<p>5.&nbsp; Click and drag to Zoom in or out about the camera.</p>
+<p>&nbsp;<em><strong>Swivel a Camera</strong></em></p>
+<p>1.&nbsp; Choose View, Camera, Swivel.</p>
+<p>2.&nbsp; Click and drag to swivel the camera.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image5.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>7. DView Command</strong></p>
+<p>Defines parallel projection or prespective views by using a camera and target.</p>
+<p>1.&nbsp; Type DVIEW at the command prompt. Command:<strong>dview</strong></p>
+<p>Select objects or &lt;use DVIEWBLOCK&gt;:<strong> pick objects</strong></p>
+<p>Enter option [Camera/Target/Dist/Points/Pan/Zoom/Twist/Clip/Hide/Off/Undo]: <strong>PO</strong></p>
+<p>Specify target point &lt;3.2567, 4.0405, 7.2994&gt;:<strong> pick target</strong></p>
+<p>Specify camera point&lt;-4.0520, -3.2436, 14.3538&gt;: <strong>.XY</strong></p>
+<p>of (need Z): <strong>7</strong></p>
+<p>Enter option [Camera/Target/Dist/Points/Pan/Zoom/Twist/Clip/Hide/Off/Undo]:<strong> D</strong></p>
+<p>Specify new camera-target distance &lt;8.3066&gt;: <strong>click and drag new zoom</strong></p>
+<p>Enter option [Camera/Target/Distance/Points/Pan/Zoom/Twist/Clip/Hide/Off/Undo]:</p>
+<p>Regenerating model.</p>
+<p>&nbsp;</p>
+<p>Camera location using .XY filter and Z height of Camera target</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image6.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>New DView</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image7.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>8. Walk and Fly</strong></p>
+<p>&nbsp;</p>
+<p>You can simulate walking and flying throught a 3D drawing.</p>
+<p>&nbsp;</p>
+<p>When you walk through a model, you travel along the XY plane. When you fly through a model. you</p>
+<p>are not constrained by the XY plane, so you appear to "fly" over an area in a model.</p>
+<p>&nbsp;</p>
+<p>The following mappings are available for walking:</p>
+<p>Up arrow/W key&nbsp;&nbsp; Move forward</p>
+<p>Down arrow/S key&nbsp;&nbsp; Move backward</p>
+<p>Left arrow/A key&nbsp;&nbsp;&nbsp; Move left</p>
+<p>Right arrow/D key&nbsp;&nbsp; Move right</p>
+<p>Drag mouse&nbsp;&nbsp; Look around &amp; turn</p>
+<p>F key Toggle&nbsp;&nbsp;&nbsp; Fly mode</p>
+<p>&nbsp;</p>
+<p>1. Open a drawing with 3D objects and displays in a 3D view.</p>
+<p>2. Create a camera anywhere in the drawing and set the view to that camera.</p>
+<p>3. Choose <strong>View, Walk and Fly, and Walk.</strong></p>
+<p>4. Type 3DFly at the command prompt. Command: <strong>3Dwalk</strong></p>
+<p>5. The folllwing walk and fly navigation mapping settings appear.</p>
+<p>Briefly look at the navigation keys, then choose close.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image8.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>The follwing Position Locator dialog box will appear that you can use to navigation your drawing.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image9.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>Press the Up, Down, Left and Right keys on the keyboard to see how the camera location moves in</p>
+<p>the drawing and Position Locator dialog box. Move the camera and target in the Position Locator</p>
+<p>dialog box. Click and drag your mouse to "fly" through the drawing.</p>
+<p>&nbsp;</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image10.jpeg"style=max-width:100%;height:auto; />
+<p>Close the Position Locator dialog box and try walking and flying using only the keys on the keyboard</p>
+<p>and mouse.</p>
+<p>&nbsp;</p>
+<p><strong>9. Walk and Fly Settings</strong></p>
+<p>1. Choose <strong>View, Walk and Hide, Walk and Hide Settings.</strong></p>
+<p>2. Type WALKFLYSETTINGS at the command prompt.Command:<strong> walkflysettings</strong></p>
+<p>3. Choose one of the following settings from the Walk and Fly dialog box. If you are working in a</p>
+<p>drawing with a large architectural scale, be sure to set your drawing units to a large number, similar</p>
+<p>to the scale of the drawing.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image11.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>10. Animation Paths</strong></p>
+<p>1. Open a drawing with 3D objects and display in a 3D view and line</p>
+<p>or polyline representing a path for an animation.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image12.jpeg"style=max-width:100%;height:auto; />
+<p>2. Choose View, Motion Path Animations.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or</p>
+<p>3. Type ANIPATH at the command prompt. Command: <strong>anipath</strong></p>
+<p>4. Click <strong>Select Path</strong> under the Link camera to: option and click on the line or polyline path.</p>
+<p>5. Click OK to the default path name.</p>
+<p>6. Click <strong>Select Path</strong> under the Link target to:&nbsp;option and click on the line or polyline path.</p>
+<p>7. Click OK to the default path name.</p>
+<p>8. Change other animation settings such as the frames per second, duration, resolution, etc.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image13.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>9. Choose the Preview ... button to preview your animation.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image14.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>10. Close the animation preview and click OK to create an animation file.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter7/image/image15.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>11. Play your animation in a Windows or Meclntosh video review application.</p>
+<p>&nbsp;</p>
+<p><strong>11. 3D Navigation Using the Dashboard</strong></p>
+<p>Regenerates a three-dimensional model with hidden lines</p>
+<p>1. Choose <strong>Tools, Palettes, Dashboard.</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or</p>
+<p>2. Type DASHBOARD at the command prompt. Command: <strong>dashboard</strong></p>
+<p>&nbsp;</p>

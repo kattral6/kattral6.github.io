@@ -1,0 +1,209 @@
+<p style="text-align: center;"><strong>Advanced Render Commands</strong></p>
+<p><strong>1.Materials</strong></p>
+<p>Contains settings that affect how materials are handled by the renderer.</p>
+<p>Apply Materials</p>
+<p>&nbsp;</p>
+<p>Applies the surface materials that you define and attach to an object in the drawing. If Apply</p>
+<p>Material is not selected, all objects in the drawing asume the color, ambient, diffuse, reflection,</p>
+<p>roughness, transparency, refraction, and bump map attribute values defined for the GLOBAL</p>
+<p>material.</p>
+<p>&nbsp;</p>
+<p><strong>Texture Filtering</strong></p>
+<p>Specifies how texture maps are filtered.</p>
+<p>&nbsp;</p>
+<p><strong>Forcee 2-Sided</strong></p>
+<p>Controls if both sides of faces are rendered.</p>
+<p>&nbsp;</p>
+<p>1. Open a drawing with 3D objects and display in a 3D view.</p>
+<p>2. Choose View, Render, Advanced Render Settings...</p>
+<img src="https://kattral6.github.io/cad/3d/chapter22/image/image1.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;&nbsp; or</p>
+<p>3. Type RPREF at the command prompt. Command: <strong>rpref</strong></p>
+<p>&nbsp;</p>
+<p><strong>2. Sampling</strong></p>
+<p>Controls how the renderer performs sampling.</p>
+<p>1. Type RPREF at the command prompt. Command: <strong>rpref</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter22/image/image2.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>Min Samples</p>
+<p>Sets the minimum sample rate. The value represents the number of sample per pixel. A value greater</p>
+<p>than or equal to 1 indicates that one or more samples are computer per pixel. A fractional value</p>
+<p>indicates that one sample is computed for every N pixels (for example, 1/4 computes a minimum of</p>
+<p>one sample for every four pixels). Default=1/4.</p>
+<p>&nbsp;</p>
+<p><strong>Max Samples</strong></p>
+<p>&nbsp;</p>
+<p>Sets the maximum sample rate. If neighboring samples find a difference in contrast that exceeds the</p>
+<p>contrast limit, the area containing the contract is subdivided to the depth specified by Maximum.</p>
+<p>Default=1.</p>
+<p>&nbsp;</p>
+<p>The values of the Min Samples and Max Sample lists are "locked" together so that the value of Min</p>
+<p>Sample can't exceed the value of Max Samples. An error dialog box is displayed if the Min Samples</p>
+<p>value is greater than the Max Sample value.</p>
+<p>&nbsp;</p>
+<p><strong>Filter Type</strong></p>
+<p>Determines how multiple samples are combined into a single pixel value. The filter Types are:</p>
+<p><strong>Box</strong>. Sums all samples in the filter area with equal weight. This is the quickest sampling</p>
+<p>method.</p>
+<p><strong>Gauss</strong>. Weights the samples using a Gauss (bell) curve centered on the pixel.</p>
+<p><strong>Triangle</strong>. Weights the samples using a pyramid centered on the pixel.</p>
+<p><strong>Mitchell</strong>. Weights the samples using a curve (steeper than Gauss) centered on the pixel.</p>
+<p><strong>Lanczos</strong>. Weights the samples using a curve (steeper than Gauss) centered on the pixel.</p>
+<p>diminishing the effect of samples at the edge of the filter area.</p>
+<p>&nbsp;</p>
+<p><strong>Filter Width and Filter Height</strong></p>
+<p>Specifies the size of the filtered area. Increasing the value of Filter Width and Filter Height can soften</p>
+<p>the image; however, it will increase rendering time.</p>
+<p>&nbsp;</p>
+<p><strong>Contrast Color</strong></p>
+<p>Clicking [...] opens the Selct Color dialog box where you interactively specify the R,G,B threshold</p>
+<p>values.</p>
+<p>&nbsp;</p>
+<p><strong>Contrast Red, Blue, Green</strong></p>
+<p>Specifies the treshold values for the red, blue, and green components of samples. These values are</p>
+<p>normalized, and range from 0.0 to 1.0, where 0.0 indicates the color compentent is fully unsaturated</p>
+<p>(black, or 0 in eight-bit encoding) and 1.0 indicates the color compentent is fully saturated (white, or</p>
+<p>255 in eight-bit encoding).</p>
+<p>&nbsp;</p>
+<p><strong>Contrast Alpha</strong></p>
+<p>Specifies the threshold value for the alpha component of samples. This value is normalized, and</p>
+<p>ranges from 0.0 (fully transparent, or 0 in eight-bit encoding) to 1.0 (fully opaque, or 255 in eight - bit</p>
+<p>encoding).</p>
+<p><strong>3. Shadows</strong></p>
+<p>Contains settings that affect how shadows appear in the rendered image.</p>
+<p>1. Type RPREF at the command prompt. Command: <strong>rpref</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter22/image/image3.jpeg"style=max-width:100%;height:auto; />
+<p><strong>Enable</strong></p>
+<p>Specifies if shadows are computed during rendering.</p>
+<p>&nbsp;</p>
+<p><strong>Mode</strong></p>
+<p>The shadow mode can be Simple, Sort, or Segments.</p>
+<p>&nbsp;</p>
+<p>Simple. Generrates shadow shaders in a random order.</p>
+<p>Sort. Generates shadow shaders in order, from the object to the light.</p>
+<p>Segments. Generates shadow shaders in order along the light ray from the volume shaders to the</p>
+<p>segment of the light ray between the object and the lighht.</p>
+<p>Shadow Map Controls if shadow mapped is used to render shadows. When on, the</p>
+<p>renderer renders shadow-mapped shadows. When off, all shadows are ray-traced.</p>
+<p>&nbsp;</p>
+<p><strong>Sampling Multiplier</strong></p>
+<p>Globally limits shadow sampling for area lights. This is part of the rendering preset data. This allows</p>
+<p>draft and low quality presets to reduce area light sampling. It's effect is to modulate the inherent</p>
+<p>sampling frequency specified for ech light. The default value=1 for new presets.</p>
+<p>Values are 0, 1/8, 1/4, 1/2, 1,2. Draft: 0; Low: 1/4; Med: 1/2; High: 1; Presentation:1.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>4. Ray Tracing</strong></p>
+<p>Contains settings that affect the shading of arendered image.</p>
+<p>1. Type RPREF at the command prompt. Command: <strong>rpref</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter22/image/image4.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>Enable</strong></p>
+<p>Specifies if ray tracing should be performed when shading.</p>
+<p>&nbsp;</p>
+<p><strong>Max Depth</strong></p>
+<p>Limits the combination of reflection and refraction. Tracing of a ray stops when the total number of</p>
+<p>reflections and refractions reaches the maximumm depth. For example, if Max Depth equals 3 and the</p>
+<p>two trace depths each eual the default value of 2, a ray can be reflected twice and refracted once, or</p>
+<p>vice versa, but it cannot be reflected and reflected and refracted four times.</p>
+<p>&nbsp;</p>
+<p><strong>Max Reflections</strong></p>
+<p>Sets the&nbsp; number of time a ray can be reflected. At 0, no reflection occurs. At 1, the ray can be</p>
+<p>reflected once only. At 2, the ray can be reflected twice, and so on.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Max Refractions</strong></p>
+<p>Sets the&nbsp; number of time a ray can be refracted. At 0, no refracted occurs. At 1, the ray can be</p>
+<p>refracted once only. At 2, the ray can be refracted twice, and so on.</p>
+<p>&nbsp;</p>
+<p><strong>5. Illumination</strong></p>
+<p>Afeects how your scence is illuminated.</p>
+<p>1. Type RPREF at the command prompt. Command: <strong>rpref</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter22/image/image5.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>Enable</strong></p>
+<p>Specifies if lights should cast indirect into the scence.</p>
+<p>&nbsp;</p>
+<p><strong>Photons/Samples</strong></p>
+<p>Sets how many photons are used to compute the intensity of the global illumination. Increasing this</p>
+<p>value makes global illumination less noisy but also more blurry . Decreasing this value makes global</p>
+<p>illumination more noisy but less blurry. The largest the Samples value, the greater the rendering time.</p>
+<p>&nbsp;</p>
+<p><strong>Use Radius</strong></p>
+<p>Determines the size of photons. When on, the spinner value sets the size of photons. When off, each</p>
+<p>photon is calculated to be 1/10 of the radius of the full scene.</p>
+<p>&nbsp;</p>
+<p><strong>Radius</strong></p>
+<p>Specifies the area within which photons will be used when illuminance is computed.</p>
+<p>&nbsp;</p>
+<p><strong>Max Depth</strong></p>
+<p>Limits the combination of reflection and refraction and refraction of a photon stop when</p>
+<p>the total number of both euqals the Max Depth setting. For example, if Max Depth equals 3 and the</p>
+<p>trace depth each equals 2, a photon can be reflected twice and refracted once, or vice versa, but it</p>
+<p>can't be reflected and refracted four times.</p>
+<p>&nbsp;</p>
+<p><strong>Max Reflections</strong></p>
+<p>Sets the number of times a photon can be reflected. At 0, no reflection occurs. At 1, the photon can be</p>
+<p>reflected once only. At 2, the photon can be reflected twice, and so on.</p>
+<p>&nbsp;</p>
+<p><strong>Max Refractions</strong></p>
+<p>Sets the number of times a photon can be refracted. At 0, no refraction occurs. At 1, the photon can be</p>
+<p>refracted once only. At 2, the photon can be refracted twice, and so on.</p>
+<p>&nbsp;</p>
+<p><strong>6. Diagnostic</strong></p>
+<p>Helps you understand why the renderer is behaving in a certain way.</p>
+<p>1. Type RPREF at the command prompt. Command:<strong> rpref</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter22/image/image6.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>Grid: Renders an image that shows the condinate space of objects, the world, or camera.</p>
+<p>Object. Shows local coordinates (UVW). Each object has its own coordinate space.</p>
+<p>World. Shows world coordinates (XYZ). The same coordinate system applies to all objects.</p>
+<p>Camera. Shows camera coordinates, which appear as a reactangular grid superimposed on the view.</p>
+<p>Grid Size:</p>
+<p>Sets the size of the grid.</p>
+<p>Photon</p>
+<p>Renders the effect of a photon map. This requires that a photon map be present. If no photon map is</p>
+<p>present, the Photon rendering looks just like the nondiagnostic rendering of the scene: the renderer</p>
+<p>first renderd the shaded scene, then replaces it with the pseudocolor image.</p>
+<p>&nbsp;</p>
+<p>Density. Renders the photon map as it is projected into the scence. High density is displayed in red, and</p>
+<p>lower values render in increasingly cooler colors.</p>
+<p>Irradiance. Similar to the Density rendering, but shades the photons based on their irradiance. The</p>
+<p>maximum irradiance is rendered in re, and lower values render in increasingly cooler colors.</p>
+<p>&nbsp;</p>
+<p>BSP</p>
+<p>Renders a visualization of the parameters used by the tree in the BSP ray-trace acceleration method. if</p>
+<p>a message from the renderer reports excessively large depth or size values, or if renderimg seems</p>
+<p>unusallys low, this can help you locate the problem.</p>
+<p>&nbsp;</p>
+<p>Depth Shows the depth of the tree, with top faces in bright red, and increasingly deep faces in</p>
+<p>increasingly cool colors.</p>
+<p>&nbsp;</p>
+<p>Size. Shows the size of leaves in the tree, with differently sized leaves indicated by different colors.</p>
+<p>&nbsp;</p>
+<p><strong>7. Processing</strong></p>
+<p>1. Type RPREF at the command prompt. Command:<strong> rpref</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter22/image/image7.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>Tile Size</p>
+<p>Determines the tile size for rendering. To&nbsp; render the scene, the image is subdivide into tiles. The</p>
+<p>smaller the tile size, the more image update are generated during rendering. When the tile size is</p>
+<p>reduced, the number of image updates increases, meaning that a rending take longer to complete. If</p>
+<p>the tile size is increased, fewer image updates occur and the rendering take less time to complete.</p>
+<p>&nbsp;</p>
+<p>Tile Order</p>
+<p>Specifies the method used (render or der) for tile as an image is rendered. You can choose a method</p>
+<p>based on how you prefer to see the image appear as it renders in the Render Window.</p>
+<p>&nbsp;</p>
+<p>Hilbert. Next tile to be rendered is based on the cost of switching to the next one.</p>
+<p>Sprial. Tiles are rendered begining at the center of the image, and spiral outward.</p>
+<p>Left to Right. Tiles are rendered in columns, from bottom to top, left to right.</p>
+<p>Right to left. Tiles are rendered in columns, from bottom to top, left to left.</p>
+<p>Top to Bottom. Tiles are rendered in rows, from right to left, top to bottom.</p>
+<p>Bottom to Top. Tiles are rendered in rows, from right to left, bottom to top.</p>
+<p>&nbsp;</p>
+<p>Memory Limit</p>
+<p>Determines the memory limit for rendering. The renderer keeps a count of the memory it uses at</p>
+<p>render time. If the memory limit isreched, the geometry for some objects is dicarded in order to</p>
+<p>allocate memory for other objects.</p>
+<p>&nbsp;</p>

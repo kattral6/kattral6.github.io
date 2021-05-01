@@ -1,0 +1,92 @@
+<h2 style="text-align: center;"><strong>User Coordinate System</strong></h2>
+<p>&nbsp;</p>
+<p><strong>1. UCS Icon</strong></p>
+<p>The UCS icon represent the orientation of the user coordinate system (UCS) axes and the location of</p>
+<p>the current UCS origin. It also represents the current viewing direction relative to the XY plane.</p>
+<p>AutoCAD displays the UCS icon differently for 2D, 3D and Paper Space environments.</p>
+<p>&nbsp;</p>
+<p><em>3D UCS icons</em></p>
+<img src="https://kattral6.github.io/cad/3d/chapter5/image/image1.jpeg"style=max-width:100%;height:auto; />
+<p><em>2D UCS icons</em></p>
+<img src="https://kattral6.github.io/cad/3d/chapter5/image/image2.jpeg"style=max-width:100%;height:auto; />
+<p><em>Pspace UCSICON</em></p>
+<img src="https://kattral6.github.io/cad/3d/chapter5/image/image3.jpeg"style=max-width:100%;height:auto; />
+<img src="https://kattral6.github.io/cad/3d/chapter5/image/image4.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>1.&nbsp; Choose <strong>View, Display, UCS Icon.</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp; or</strong></p>
+<p>2.&nbsp; Type UCSICON at the command prompt. Command: <strong>uscicon</strong></p>
+<p>Enter an option [ON/OFF/All/Noorigin/ORigin/Propreties]&lt;ON&gt;:</p>
+<p>ON Display the UCS icon.</p>
+<p>OFF Turns off the display of the UCSICON.</p>
+<p>All Affects the display of the UCSICON in all viewports.</p>
+<p>Noorigin Always displays the UCS at the lower left corner.</p>
+<p>.</p>
+<p>Origin Shows the UCS at the 0,0,0 origin of the current UCS</p>
+<p>.</p>
+<p>Properties Changes the display properties of the UCS icon(s)</p>
+<p><strong><em>UCS Icon Properties</em></strong></p>
+<p>1.&nbsp;&nbsp; Choose <strong>View, Display, UCS Icon, Properties</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or</strong></p>
+<p>2.&nbsp;&nbsp; Type UCSICON at the command prompt. Command: <strong>ucsicon</strong></p>
+<p>Enter an option [ON/OFF/All/Noorigin/ORigin/Properties]&lt;ON&gt;: <strong>P</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter5/image/image5.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>2. UCS Overview</strong></p>
+<p>The user coordinate system provides an alternate movable coordinate system for coordinate entry,</p>
+<p>planes of operation, and viewing. Most AutoCAD geometric editing commands are dependent on the</p>
+<p>location and orientation of the UCS. There are a variety of ways to set the User Coordinate System</p>
+<p>using the UCS command.</p>
+<p>1.&nbsp; Type UCS at the command prompt. Command:<strong>ucs</strong></p>
+<p>Enter an option[New/Move/orthoGraphic/Prev/Restore/Save/Del/Apply/?/World] &lt;World&gt;:</p>
+<p>New&nbsp;&nbsp;&nbsp;&nbsp; Defines a new coordinate system by one of six methods: Origin, Z Axis,3 Point, Object</p>
+<p>&nbsp;&nbsp;&nbsp; Face, View X,Y,Z.&nbsp;&nbsp;</p>
+<p>Origin&nbsp; Defines&nbsp; a new UCS by shifting the origin of the current UCS,leaving the direction of the</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X,Y, and Z axes unchanged.</p>
+<p>ZAxis&nbsp; Allows you to define a new origin.</p>
+<p>3 Point Specifies a UCS by its origin and a point on the positive X and Y axes.</p>
+<p>Object Lets you define a new UCS by pointing at an object.</p>
+<p>Face&nbsp;&nbsp;&nbsp; ALigns the UCS to the selected face of a solid object.</p>
+<p>View&nbsp;&nbsp; Established a new UCS whose XY plane is perpendicular to your viewing direction(e.g.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parallel to your screen.</p>
+<p>X/Y/Z&nbsp; Rotates the ucs arround a specified axis</p>
+<p>&nbsp;</p>
+<p><strong>UCS Toolbars</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter5/image/image6.jpeg"style=max-width:100%;height:auto; />
+<img src="https://kattral6.github.io/cad/3d/chapter5/image/image7.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>3. Point UCS</strong></p>
+<p>The 2 Point option is one of the easiest ways to define a new UCS on a given 3D objecct.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp; Open a drawing with a simple 3D object (e.g.3D box)</p>
+<p>2.&nbsp; Type UCS at the command prompt. Command:<strong>ucs</strong></p>
+<p>Enter an option [New/Move/orthoGraphics/Prev/Restore/Save/Del/Apply/?/World]&lt;World&gt;:<strong> N</strong></p>
+<p>Specify origin of new UCS or [ZAxis/3point/Object/Face/View/X/Y/Z]&lt;0,0,0&gt;: <strong>3</strong></p>
+<p>Specify new origin poiint&lt;0,0,0&gt;: <strong>pick origin</strong></p>
+<p>Specify point on postive portion of X-axis &lt;3.53,7.73,0.00&gt;: <strong>pick point for X direction</strong></p>
+<p>Specify point on postive-Y portion of the UCS XY plane &lt;2.53,8.73,0.00&gt;: <strong>pick point for Y direction</strong></p>
+<p>&nbsp;</p>
+<p>Positive Y</p>
+<img src="https://kattral6.github.io/cad/3d/chapter5/image/image8.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>New 0,0,0 origin</p>
+<p>&nbsp;</p>
+<p>New UCS</p>
+<img src="https://kattral6.github.io/cad/3d/chapter5/image/image9.jpeg"style=max-width:100%;height:auto; />
+<p><strong>4. Plan Ucs</strong></p>
+<p>To work in the plan View of your new UCS, use the PLAN command with the current UCS option.</p>
+<p>New entities that you draw will be inn relation to this current <strong>UCS.</strong></p>
+<p>1.&nbsp; Type PLAN at the command prompt. Command: <strong>plan</strong></p>
+<p>Enter an option [Current ucs/Ucs/World] &lt;Current&gt;: <strong>press enter</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter5/image/image10.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>5. World UCS</strong></p>
+<p>The World UCS is the only UCS guaranted to be the same in all AutoCAD drawings and can be used</p>
+<p>to set the UCS back to its original state. This is the UCS you sould use when creating Wblocks and</p>
+<p>inserted Wblocks.</p>
+<p>&nbsp;</p>
+<p>1.&nbsp; Type UCS at the command prompt. Command:<strong> ucs</strong></p>
+<p>Current ucs name: *NO NAME*</p>
+<p>Enter an option [New/Move/orthoGraphic/Prev/Restore/Save/Del/Apply/?/World] &lt;World&gt; <strong>W</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter5/image/image11.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>&nbsp;</p>

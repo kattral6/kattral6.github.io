@@ -1,0 +1,184 @@
+<h2 style="text-align: center;"><strong>Lights</strong></h2>
+<p><strong>1. Default Lighting</strong></p>
+<p>When there are no lights in a scence, the scence is shaded with&nbsp; default lighting. Default lighting is</p>
+<p>derived from two distant sources that follow the viewpoint as you move around the model. All faces</p>
+<p>in the model are illuminated so that they aree visually discernible. You can control brightness and</p>
+<p>contrast, but you do not need to create or place lights yourself.</p>
+<p>When you insert custom lights or add sunlight, you can disable the default lighting. You can apply</p>
+<p>defaullt lighting to the viewport only: at the same time, you can apply custom lights to the rendering.</p>
+<p><strong>ON/OFF</strong></p>
+<p>1. Choose Default Lighting from the Lighting ribbon or type</p>
+<p>DEFAULTLIGHTING at the command prompt. Command: _ defaultlighting</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image1.jpeg"style=max-width:100%;height:auto; />
+<p>Enter new value value for DEFAULTLIGHTING &lt;0&gt;:1</p>
+<p>&nbsp;</p>
+<p><strong>2.Point Lights</strong></p>
+<p>A point light radiates light in all directions from its location.</p>
+<p>1. Open a drawing with 3D objects and display in a 3D view.</p>
+<p>2. Choose <strong>View, Render, Light, New Point Light.</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; or</p>
+<p>3. Type POINTLIGHT at the command prompt. Command: <strong>pointlight</strong></p>
+<p>4. Click Turn Off default lighting in the following prompt if default lighting was on:</p>
+<p>Specify source location &lt;0,0,0&gt; <strong>.XY</strong> of pick bottom center of bottle</p>
+<p>(need Z):&nbsp;<strong> 15</strong></p>
+<p>Enter an option to change [Name/Intensity/Status/Shadow/Attenuation/Color/Exit]</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Exit&gt;: enter</p>
+<p>5. Render the current viewport.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image2.jpeg"style=max-width:100%;height:auto; />
+<p><em>View rendered using a point light</em></p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image3.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>3. Spot Lights</strong></p>
+<p>A spotlight emits a directional cone of light.</p>
+<p>1. Open a drawing with 3D objects and display in a 3D view.</p>
+<p>2. Choose <strong>View, Render, Light, New Spot Light.</strong></p>
+<p>&nbsp;&nbsp;&nbsp; or</p>
+<p>3. Type SPOTLIGHT at the command prompt. Command: <strong>spotlight</strong></p>
+<p>Specify source location &lt;0,0,0&gt;:&nbsp;<strong> P1</strong></p>
+<p>Specify target location &lt;0,0,0&gt;&nbsp;&nbsp;<strong> P2</strong></p>
+<p>Enter an option to change</p>
+<p>[Name/Intensity/Status/Hotspot/Falloff/Shadow/Attenuation/Color/Exit] &lt;Exit&gt;:<strong> enter</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image4.jpeg"style=max-width:100%;height:auto; />
+<p>4. Render the current viewport.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image5.jpeg"style=max-width:100%;height:auto; />
+<p><em>View rendered using a point and spotlight</em></p>
+<p>&nbsp;</p>
+<p><strong>4. Editing Lights with Light List</strong></p>
+<p>The lightlist command allows you to modify lights in a drawing. This</p>
+<p>includes turning lights off, deleting lights, or changing the properties of one</p>
+<p>or more lights.</p>
+<p>&nbsp;</p>
+<p>1. Open a drawing with lights.</p>
+<p>2. Choose <strong>View, Render, Light, Lightlist</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; or</p>
+<p>3. Choose Lights in the Model from the lighting ribbon.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image6.jpeg"style=max-width:100%;height:auto; />
+<p>4. Type LIGHTLIST at the command prompt. Command: <strong>lightlist</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image7.jpeg"style=max-width:100%;height:auto; />
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image8.jpeg"style=max-width:100%;height:auto; />
+<p>5. Double-click one of the lights in the drawing to modify its properties.</p
+<p>&nbsp;</p>
+<p><strong>5. Photometric Lights</strong></p>
+<p>For more precise control over lighting, you can use photmetric lights to illuminate your model.</p>
+<p>Photometric lights use photometric (light energy) values that enable you to more accurately define</p>
+<p>lights as they would be in the real world. You can create lights with various distribution and color</p>
+<p>characteristics, or import specific photmetric files available from lighting manufacturers.</p>
+<p>&nbsp;</p>
+<p>Photometricc lights can use manufactures' IES standard file format. By using manufacturers' lighting</p>
+<p>data, you can visualize commerically available lighting in your model. Then you can experiment with</p>
+<p>differnt fixture, and by varying the light intensity and color temperature, you can</p>
+<p>design a lighting system that produces the results you want.</p>
+<p>&nbsp;</p>
+<p>1. Open a drawing with lights.</p>
+<p>2. Type LIGHTLIST to see the current lights in the drawing.</p>
+<p>3. Render the viewport to see the current light settings with photometric lights off.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image9.jpeg"style=max-width:100%;height:auto; />
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image10.jpeg"style=max-width:100%;height:auto; />
+<p>4. Type LIGHTINGUNITS at the command value to 1 (on)</p>
+<p>Command: lightingunits</p>
+<p>Enter new value for LIGHTINGUNITS &lt;0&gt;:1</p>
+<p>5. Render the viewport to see the current light settings with photometric lights on.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image11.jpeg"style=max-width:100%;height:auto; />
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image12.jpeg"style=max-width:100%;height:auto; />
+<p>6. Type LIGHTLIST and double-click the Lamp Spotlight.</p>
+<p>7. Change the lamp color to Halogen and the Candle intensity to 150.</p>
+<p>8. Render the viewport.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image13.jpeg"style=max-width:100%;height:auto; />
+<p>9. Practice changing other light's photometric properties.</p>
+<p>&nbsp;</p>
+<p><strong>6. Lights Tool Palette</strong></p>
+<p>Default lights can be addded to your drawing from the Tool Palette menus.</p>
+<p>1. Press CTRL +3 to open the Tool Palettes.</p>
+<p>2. Right click at the bottom of the palette tabs and choose Incandescent.</p>
+<p>3. Right-click the 75 Watt bulb and choose properties.</p>
+<p>4. Notice the photometric properties for this bulb.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image14.jpeg"style=max-width:100%;height:auto; />
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image15.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>7. Luminaries</strong></p>
+<p>To create realistic lighting in a drawing, you can embed photmetric lights in blocks that also contain</p>
+<p>geometry. Tool palettes of photometric lights provide easy acess to photometric lighting bulbs,</p>
+<p>lamps, or weds. You can select from fluorescent, low pressure sodium, incadescent, and high</p>
+<p>intensity discharge types of lighting.</p>
+<p>&nbsp;</p>
+<p>A luminary assembles a set of light objects into a fixture. For example, you can create a set of</p>
+<p>lights to create a light over a dining area. You can select the photometric lights from the tool palettes,</p>
+<p>position them within a 3D representation of the light, and create a block of the light objects and the</p>
+<p>3D representation of the light to create the light fixture with photometric properties.</p>
+<p>1. Open a drawing with photometric lights and a light fixture.</p>
+<p>2. Create a block of the light fixture made up of the lights and fixture.</p>
+<p>3. Insert in the drawing and render.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image16.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>8. Distant Lights</strong></p>
+<p>A distance light emits uniform parallel light rays in one direction only. You specify a FROM point and</p>
+<p>a To point anywhere in the viewport to define the direction of the light. There is no light glyphoto</p>
+<p>represent a distant light in your drawing.</p>
+<p>1. Open a drawing with 3D objects and display in a 3D view.</p>
+<p>2. Choose <strong>View, Render, Light, New Distance Light.</strong></p>
+<p>3. Type DISTANTLIGHT at the command prompt. Command: distantlight</p>
+<p>Specify light direction FROM &lt;0,0,0&gt; or [Vector]:<strong> .XY</strong></p>
+<p>of <strong>MID P1</strong></p>
+<p>of (need Z):<strong> 5</strong></p>
+<p>Specify light direction FROM &lt;1,1,1&gt; or [Vector]: <strong>.XY</strong></p>
+<p>of<strong> MID P2</strong></p>
+<p>of (need Z):<strong> 5</strong></p>
+<p>Enter an option to change</p>
+<p>[Name/Intensity/Status/Shadow/Color/Exit] &lt;Exit&gt;: <strong>enter</strong></p>
+<p>&nbsp;</p>
+<p><strong>P1</strong></p>
+<p>&nbsp;</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image17.jpeg"style=max-width:100%;height:auto; />
+<p><strong>P2</strong></p>
+<p>&nbsp;</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image18.jpeg"style=max-width:100%;height:auto; />
+<p><em>View rendered using a point and spotlight</em></p>
+<p>&nbsp;</p>
+<p><strong>9. Other Lights</strong></p>
+<p><strong>Weblights</strong></p>
+<p>Photometric weblight (web) is a 3D representation of the light intensity distribution of a light</p>
+<p>source. Photometric weblights can be used to represent anisotropic (non-uniform) light distributions</p>
+<p>derived from data provided by manufacturers of real-world lights. This gives a far more</p>
+<p>precise representation of the rendered light than either spot or point lights are capable of.</p>
+<p>&nbsp;</p>
+<p>This direectional light distribution information is stored in a photometric data file in the IES format</p>
+<p>using the IES LM-63-1991 standard file format for photometric data. You can load photometric data</p>
+<p>files provided by various manufactures under the Photometric web panel in the Properties palette</p>
+<p>for the light. The light icon represents the photometric web you select.</p>
+<p>&nbsp;</p>
+<p>Light that uses a photometric web can be added to a drawing by entering the commands WEBLIGHT</p>
+<p>and FREEWEB at the command prompt. A weblight targets an object whereas a freeweb light does</p>
+<p>not.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Target Point Lights</strong></p>
+<p>You create a target point light with the TARGETPOINT command. The different between the target</p>
+<p>point light and a point light is the additional target properties that are available. A target light can be</p>
+<p>Changing the target property of the point light from No to Yes.</p>
+<p><strong>10. Geographic Locations</strong></p>
+<p>Specifies the latitude and longitude of a location for the sunlight.</p>
+<p>1. Open a drawing with lights.</p>
+<p>2. Choose <strong>View, Render, Light, Geographic Location.</strong></p>
+<p>&nbsp;&nbsp;&nbsp; or</p>
+<p>3. Type GEOGRAPHICLOCATION at the command prompt. Command: <strong>geographiclocation</strong></p>
+<p>4. Choose Enter the location values from the following dialog box.</p>
+<p>5. Click the Use map... button.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image19.jpeg"style=max-width:100%;height:auto; />
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image20.jpeg"style=max-width:100%;height:auto; />
+<p>6. Choose INDIA from the location dialog box.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image21.jpeg"style=max-width:100%;height:auto; />
+<p>Accept the updated time zone settings.</p>
+<p>&nbsp;</p>
+<p><strong>11. Sun Properties</strong></p>
+<p>1. Open a drawing with a goegraphic location identified.</p>
+<p>2. Choose <strong>View, Render, Light, Sun Properties</strong></p>
+<p>3. Type SUNPROPERTIES at the command prompt. Command: <strong>sunproperties</strong></p>
+<p>4. From the Sun Properties dialog box, click the Status dropdown and click <strong>ON.</strong></p>
+<p>5. Change the date to <strong>APRIL 24, 2011.</strong></p>
+<p>6. Change other properties as desired and render the model. Repeat for <strong>September 27,2010</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image22.jpeg"style=max-width:100%;height:auto; />
+<p><em>US Capitol Buliding rendered on April 24, 2011</em></p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image23.jpeg"style=max-width:100%;height:auto; />
+<p><em>US Capitol Buliding rendered on September 27</em></p>
+<img src="https://kattral6.github.io/cad/3d/chapter20/image/image24.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>

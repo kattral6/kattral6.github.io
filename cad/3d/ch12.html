@@ -1,0 +1,109 @@
+<h2 style="text-align: center;"><strong>Creating Solids</strong></h2>
+<p><strong>1. Solid Primitives</strong></p>
+<p>Solid primitives can easily be drawn from both the Draw pulldown menu</p>
+<p>and from Autodesk's dashboard.</p>
+<p>1. Choose <strong>Draw, Modeling,</strong> and one of the following solid primitives.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image1.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;&nbsp;&nbsp;&nbsp; or</p>
+<p>2. Choose the solid primitive from AutoCAD's Dashboard.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image2.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>3. Choose the solid primitive from the 3D Modeling panel.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image3.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>2. Polysolid Command</strong></p>
+<p>With the POLYSOLID ccommand, you can convert an existing line, 2D</p>
+<p>polyline, arc, or circle to a solid with a rectangular profit. A ploysolid can</p>
+<p>have curved segments, but the profile is always rectangular by default.</p>
+<p>&nbsp;</p>
+<p>1.&nbsp; Open a drawing with a closed 2D polyline and display in a 3D view</p>
+<p>2.&nbsp; Choose <strong>Draw, Modeling, Polysolid.</strong></p>
+<p>3. Type POLYSOLID at the command prompt. command: <strong>polysolid</strong></p>
+<p>Specify start point or [Object/Height/Width/Justify] &lt;Object&gt;:&nbsp;&nbsp;&nbsp;<strong> h</strong></p>
+<p>Specify height &lt;0"-4"&gt;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>10'</strong></p>
+<p>Specify start point or [Object/Height/Width/Justify] &lt;Object&gt;:&nbsp;&nbsp;&nbsp;<strong> o</strong></p>
+<p>Specify object:<strong> Pick polygon</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; or</p>
+<p>4. Choose Polysolid from the 3D Modeling panel.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image4.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>3. Extrude</strong></p>
+<p>Creates unique solid primitives by extrudinng existing two-dimensional</p>
+<p>objects. You can extrude multiple objects with EXTRUDE.</p>
+<p>&nbsp;</p>
+<p>1. Type EXTRUDE at the command prompt. command: <strong>extrude</strong></p>
+<p>Current wire frame density: ISOLINES=4</p>
+<p>Select objects: <strong>pick objects</strong></p>
+<p>Select objects:<strong> enter</strong></p>
+<p>Specify height of extrusion or [Direction/Path/Taper angle]:&nbsp;&nbsp;&nbsp;&nbsp;<strong> 2</strong></p>
+<p>&nbsp;</p>
+<p><em>Lines with a Thickness of 2"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lines Extruded 2"</em></p>
+<p>&nbsp;</p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image5.jpeg"style=max-width:100%;height:auto; />
+<p><strong>4. Extrude with Taper</strong></p>
+<p>1. Choose <strong>Draw, Modeling, Extrude.</strong></p>
+<p>&nbsp;&nbsp;&nbsp; or</p>
+<p>2. Type EXTRUDE at the command prompt. Command: <strong>extrude</strong></p>
+<p>Current wire frame density:&nbsp; ISOLINES=4</p>
+<p>Select objects to extrude: <strong>pick objects to extrude</strong></p>
+<p>Select objects to extrude: <strong>enter</strong></p>
+<p>Specify height of extrusion or [Direction/Path/Taper angle]&lt;8.9509&gt;:&nbsp;&nbsp;&nbsp;&nbsp;<strong> T</strong></p>
+<p>Specify angle of taper for extrusion &lt;0&gt;:&nbsp;&nbsp;&nbsp;&nbsp;<strong> 15</strong></p>
+<p>&nbsp;Specify height of extrusion or [Direction/Path/Taper angle]&lt;8.9509&gt;:&nbsp;&nbsp;&nbsp;<strong>&nbsp; 4</strong></p>
+<p>&nbsp;</p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image6.jpeg"style=max-width:100%;height:auto; />
+<p><strong>5. Extrude with Path</strong></p>
+<p>1. Choose <strong>Draw, Modeling, Extrude.</strong></p>
+<p>&nbsp;&nbsp;&nbsp; or</p>
+<p>2. Type EXTRUDE at the command prompt. Command: <strong>extrude</strong></p>
+<p>Current wire frame density:&nbsp; ISOLINES=4</p>
+<p>Select objects to extrude: 1 found</p>
+<p>Select objects to extrude: <strong>pick circle(P1)</strong></p>
+<p>Specify height of extrusion or [Direction/Path/Taper angle]&lt;4.0000&gt;:&nbsp;&nbsp;&nbsp;<strong>&nbsp; P</strong></p>
+<p>Select extrusion path or [Taper angle]:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>pick P2</strong></p>
+<p><em>Circle Extruded Along a Path&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </em></p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image7.jpeg"style=max-width:100%;height:auto; />
+<p><em>Hidden Line Removal of Extruded Circle</em></p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image8.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>6. Revolve Command</strong></p>
+<p>1. Open a drawing with 3D objects and display in a 3D view.</p>
+<p>2. Choose<strong> Draw, Modelng,Revolve.</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; or</p>
+<p>3. Type REVOLVE at the command prompt. Command: <strong>revolve</strong></p>
+<p>Current wire frame density:&nbsp; ISOLINES=4</p>
+<p>Select objects to extrude:<strong> pick objects</strong></p>
+<p>Select objects to extrude: <strong>enter</strong></p>
+<p>Specify start point for axis of revolution or define axis by [Object/X(axis)/Y(axis)]:<strong> o</strong></p>
+<p>Select an object: <strong>Pick axis</strong></p>
+<p>Specify angle of revolution &lt;360&gt;:&nbsp;<strong> enter</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image9.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>7. Sweep Command</strong></p>
+<p>1. Open a drawing with 2D objects to sweep and display in a 3D view.</p>
+<p>2. Choose <strong>Draw, Modeling, Sweep.</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; or</p>
+<p>3. Type SWEEP at the command prompt. Command:<strong> sweep</strong></p>
+<p>Current wire frame density:&nbsp; ISOLINES=4</p>
+<p>Select objects to sweep: <strong>pick arc</strong></p>
+<p>Select objects to sweep: </p>
+<p>&nbsp;</p>
+<p>Select sweep path or[Alignment/Base point/Scale/Twist]: <strong>pick path</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image10.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p><strong>8. Loft Command</strong></p>
+<p>1. Open a drawing with 2D objects to sweep and display in a 3D view.</p>
+<p>2. Choose <strong>Draw, Modeling, Loft.</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; or</p>
+<p>3. Type LOFT at the command promtp. Command: <strong>loft</strong></p>
+<p>Select cross-selection in lofting order: <strong>pick circles</strong></p>
+<p>Specify opposite corner:<strong> 5 found</strong></p>
+<p>Select cross-sections in lofting order:</p>
+<p>Enter an option [Guides/Path/Cross-section only] &lt;Cross-sections</p>
+<p>only&gt;:<strong> enter</strong></p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image11.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
+<p>Click OK.</p>
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image12.jpeg"style=max-width:100%;height:auto; />
+<img src="https://kattral6.github.io/cad/3d/chapter12/image/image13.jpeg"style=max-width:100%;height:auto; />
+<p>&nbsp;</p>
