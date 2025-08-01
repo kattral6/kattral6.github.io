@@ -1,0 +1,106 @@
+body{
+		color: black;
+		font-family: Verdana;
+	  font-weight: normal;
+		text-align: justify;
+	}
+	
+	::-webkit-scrollbar { 
+    display: none; 
+	}	
+
+	
+	
+	hr {
+	    border: 2px solid #167F92;
+	}
+	
+	f{
+		font-size: 20px;
+	}
+	
+	table{
+
+		width: auto;
+		border-radius: 10px;
+		background-color: white;
+		border: 2px solid #58ACFA;
+		color: #000000;
+		opacity: 0.9;
+	}
+
+	th{
+		background-color:#58ACFA;
+		padding:5px;
+		border: 1px solid #58ACFA;
+    	border-radius: 10px 10px 0px 0px;
+	    color: #ffffff;
+	}
+	td{		padding:5px;
+			border: 1px solid #58ACFA;
+	}
+
+	tr:last-child td {  border-radius: 0px 0px 10px 10px;   }
+	tr:nth-child(even) {background: #ffffff}
+	tr:nth-child(odd) {background: #CEECF5}
+
+	h3{
+		font-family: Verdana;
+	  font-weight: 8px;
+	  color: blue;
+	  text-align:left;
+	  span {color: #167F92;}
+	}
+	
+	
+	
+	h2 {
+ 	 font-family: Verdana;
+	  font-weight: 8px;
+	  color: blue;
+	  text-align:left;
+	  span {color: #167F92;}
+	  
+	}
+	
+	
+	
+	    div.polaroid {
+		width: 80%;
+		background-color: white;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+div.container {
+  border-radius: 15px;
+   max-width: 100%;
+  height: auto;
+   margin-left: auto;
+  margin-right: auto;
+}
+
+div{
+		
+width: auto;
+		
+background-color: black;
+		
+color:  white;
+
+	
+
+}
+
+
+
+
+
+	
+	
+
